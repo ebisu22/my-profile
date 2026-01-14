@@ -60,6 +60,28 @@
         .btn-map { border-left: 8px solid #007bff; }     /* Googleマイマップブルー */
         .btn-grant { border-left: 8px solid #9b59b6; }   /* GRANTパープル */
 
+        /* ★追加：QRコードエリアのデザイン */
+        .qr-container {
+            margin-top: 40px;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            width: 80%;
+            max-width: 200px;
+        }
+        .qr-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .qr-text {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #888;
+        }
+
         /* フッター */
         footer { margin-top: auto; padding: 20px; font-size: 12px; color: #aaa; }
     </style>
@@ -90,6 +112,11 @@
             🤝 プロボノ：grantの実績
         </a>
 
+    </div>
+
+    <div class="qr-container">
+        <img src="qr.png" alt="Share QR" class="qr-img">
+        <div class="qr-text">Scan to Share</div>
     </div>
 
     <footer>
