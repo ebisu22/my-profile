@@ -9,7 +9,7 @@
         body {
             font-family: "Helvetica Neue", Arial, sans-serif;
             margin: 0; padding: 0;
-            background-color: #f4f4f4; /* 背景色：薄いグレー */
+            background-color: #f4f4f4;
             color: #333;
             display: flex; flex-direction: column; align-items: center;
             min-height: 100vh;
@@ -24,7 +24,7 @@
         
         .profile-img {
             width: 120px; height: 120px;
-            border-radius: 50%; /* 丸く切り抜く */
+            border-radius: 50%;
             object-fit: cover;
             border: 4px solid white;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -35,7 +35,7 @@
 
         /* リンクボタン部分 */
         .links-container {
-            width: 90%; max-width: 400px; /* スマホで見やすい幅 */
+            width: 90%; max-width: 400px;
             display: flex; flex-direction: column; gap: 15px;
         }
 
@@ -44,7 +44,7 @@
             text-decoration: none;
             padding: 16px;
             background-color: white;
-            border-radius: 50px; /* 丸みのあるボタン */
+            border-radius: 50px;
             text-align: center;
             font-weight: bold;
             color: #333;
@@ -52,13 +52,13 @@
             transition: transform 0.1s, box-shadow 0.1s;
         }
 
-        /* ホバー時の動き */
         .link-btn:active { transform: scale(0.98); }
 
-        /* 各ボタンの色分け（アクセント） */
+        /* 各ボタンの色分け */
         .btn-spotify { border-left: 8px solid #1DB954; } /* Spotifyグリーン */
         .btn-note { border-left: 8px solid #2cb696; }    /* noteグリーン */
-        .btn-map { border-left: 8px solid #007bff; }     /* 地図ブルー */
+        .btn-map { border-left: 8px solid #007bff; }     /* Googleマイマップブルー */
+        .btn-grant { border-left: 8px solid #9b59b6; }   /* GRANTパープル */
 
         /* フッター */
         footer { margin-top: auto; padding: 20px; font-size: 12px; color: #aaa; }
@@ -82,14 +82,18 @@
             📖 noteを読む
         </a>
 
-        <a href="https://www.google.com/maps/d/edit?mid=1lSwk3HWt0hsb06PKcleLU1Ou4vykZY4&usp=sharing" class="link-btn btn-map" target="_blank">
+        <a href="https://ebisu22.github.io/my-map-picker/" class="link-btn btn-map" target="_blank">
             🗺️ 散歩マップを見る
+        </a>
+
+        <a href="https://grant.community/people/55" class="link-btn btn-grant" target="_blank">
+            🤝 プロボノ：grantの実績
         </a>
 
     </div>
 
     <footer>
-        &copy; 2026 My Digital Namecard
+        © 2026 My Digital Namecard
     </footer>
 
 </body>
